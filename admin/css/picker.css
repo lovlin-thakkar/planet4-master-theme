@@ -16,7 +16,6 @@
 .image-picker li {
   display: inline-block !important;
   position: relative;
-  border: 2px solid transparent;
 }
 
 .image-picker li[data-wordpress-id]:after {
@@ -30,11 +29,12 @@
 
 .image-picker li img {
   margin: 2px 4px 0 0;
+  border: 2px solid transparent;
+  box-sizing: border-box;
 }
 
-li.picker-selected {
+.image-picker li img.picker-selected {
   border-color: yellow;
-  box-sizing: border-box;
 }
 
 .picker-sidebar-fields {
